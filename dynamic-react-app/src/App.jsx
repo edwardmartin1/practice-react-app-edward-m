@@ -7,7 +7,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-      <div className="card-grid">
+      <div>
         <Header />
         <ProfileContainer profiles={profileArray} />
       </div>
