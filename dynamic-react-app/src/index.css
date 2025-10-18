@@ -1,0 +1,48 @@
+body{
+  text-align: center;
+  background: #F1F0EE;
+  margin: 20px;
+  display: grid;    
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "main main main main";   
+  color: #004d40;
+  font-family: sans-serif, Arial;
+}
+
+header {
+  background-color: #3770F6;
+  grid-area: header; 
+}
+
+main {  
+  grid-area: main;
+}
+
+li:hover{
+  color: #FF7F50;
+}
+
+main ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  list-style: none;
+}
+
+article {
+  border: 1px solid currentColor;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+}
+
+
