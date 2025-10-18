@@ -1,16 +1,17 @@
-
-
 const ProfileCard = (props) =>
 {
     return (
-        <li>
-            {props.profileObject.id} {" - "} {props.profileObject.name} {" - "} {props.profileObject.age} {" - "} {props.profileObject.bio}
-        </li>
+        <div>
+            <li>
+                <article class="card">
+                    <p>Name: {props.profileObject.name}</p> 
+                    <p>Age: {props.profileObject.age}</p> 
+                    <p>Bio: {props.profileObject.bio}</p>
+                </article>    
+            </li>
+        </div>
     );
 }
 
 export default ProfileCard;
 
-/*
-key={props.profileObject.id}
-*/

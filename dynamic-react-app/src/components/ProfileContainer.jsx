@@ -1,19 +1,16 @@
 import ProfileCard from "./ProfileCard"
 
-
 const ProfileContainer = (props) =>
 {
     return (
-        <div>
+        <main>
             <ul>
                 {props.profiles.map((individualProfile) =>
-                (
-                    
-                        <ProfileCard key={individualProfile.id} profileObject={individualProfile} /> 
-                    
+                (                    
+                    <ProfileCard key={individualProfile.id} profileObject={individualProfile} />                     
                 ))}
             </ul>
-        </div>
+        </main>
     );
 }
 
